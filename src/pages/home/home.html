@@ -1,14 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Dashboard
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <div class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+      Active Requests
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+<br>
+<br>
+    <ion-card>
+      <ion-card-header>
+       Funded Projects
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card> 
+ 
+  </div> 
 </ion-content>
